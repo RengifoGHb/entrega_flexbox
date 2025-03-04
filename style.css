@@ -1,0 +1,380 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #e6c744;
+  --secondary-color: #ffffff;
+  --tertiary-color: #000000;
+  --quaternary-color: #c2c8da;
+  --background-color-body: whitesmoke;
+  --background-color: #ffffff;
+}
+
+span {
+  display: inline-block;
+  rotate: -1deg;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:focus {
+  outline: 3px solid #0004ff;
+  outline-offset: 2px;
+}
+
+.button {
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  padding: 1.5svw 2svw;
+  font-size: 2svw;
+  border-radius: 0.5rem;
+  border: none;
+  text-align: center;
+}
+
+.button:hover {
+  filter: brightness(70%);
+}
+
+.button:focus {
+  outline: 3px solid #0004ff;
+  outline-offset: 2px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color-body);
+}
+
+header {
+  background-color: var(--background-color);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0svw 3svw 0svw 3svw;
+  margin: 5svw 5svw 0svw 5svw;
+}
+
+header .container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0svw 2svw;
+}
+
+header .logo {
+  width: 15svw;
+  margin: 3svw 3svw 1svw 3svw;
+}
+
+#nav_links {
+  display: none;
+}
+
+#sign_up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3svw 0svw 1svw 0svw;
+}
+
+header .menu_mobile {
+  width: 8svw;
+  margin: 0svw 3svw 0svw 3svw;
+}
+
+main {
+  background-color: var(--background-color);
+  margin: 0svw 5svw;
+}
+
+#hero .container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3svw;
+  align-items: center;
+  background-image: url(./assets/images/fondo.jpg);
+  background-size: cover;
+  border-radius: 2rem;
+  margin: 0svw 4svw;
+  margin-bottom: 4svw;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3svw;
+  margin-bottom: 3svw;
+}
+
+.title {
+  font-size: 5svw;
+  font-weight: bold;
+  color: var(--tertiary-color);
+  margin-bottom: 0.5svw;
+}
+
+.title span:nth-of-type(1) {
+  width: 80%;
+  background-color: var(--secondary-color);
+}
+
+.title span:nth-of-type(2) {
+  width: 90%;
+  background-color: var(--primary-color);
+}
+
+p {
+  font-size: 1.5svw;
+  font-weight: lighter;
+  color: var(--tertiary-color);
+  margin-bottom: 1svw;
+}
+
+#hero .container .button {
+  padding: 1.5svw 2svw;
+}
+
+#hero .container img {
+  width: 40%;
+  margin-top: 1svw;
+  align-self: flex-end;
+}
+
+main nav {
+  background-color: var(--primary-color);
+  margin-bottom: 5svw;
+}
+
+#partners_links {
+  padding: 0svw 2svw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#partners_links > li > a {
+  display: flex;
+}
+
+#zara,
+#levi {
+  width: 10svw;
+}
+
+#hm {
+  width: 8svw;
+}
+
+#stradivarius,
+#bershka {
+  width: 15svw;
+}
+
+#new_arrivals h2 {
+  font-size: 3svw;
+  background-color: var(--primary-color);
+  text-align: center;
+  margin: 2svw 0svw 3svw 0svw;
+}
+
+#arrivals {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0svw 5svw 5svw 5svw;
+}
+
+#arrivals img {
+  width: 30%;
+}
+
+#payday .container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4svw;
+  background-image: url(./assets/images/fondo1.jpg);
+  background-size: cover;
+}
+
+#payday .container img {
+  width: 20%;
+  margin-top: 3svw;
+}
+
+#info_payday {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info_title {
+  font-size: 1.5svw;
+  font-weight: lighter;
+  color: var(--tertiary-color);
+  margin-bottom: 1svw;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.terms {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+#contact .container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6svw 0svw;
+}
+
+#contact .container .title {
+  font-size: 2svw;
+}
+
+#contact .container .info_title {
+  font-size: 1.5svw;
+  margin-bottom: 3svw;
+}
+
+#contact .container .form {
+  display: flex;
+  gap: 1svw;
+  align-items: center;
+}
+
+#contact > .container > form > input {
+  width: 30svw;
+  height: 3svw;
+}
+
+#contact > .container > form > input::placeholder {
+  font-size: 2svw;
+}
+
+#contact > .container > form > .button {
+  font-size: 1.5svw;
+  padding: 0.5svw 2svw;
+}
+
+footer {
+  background-color: var(--tertiary-color);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 3svw 6svw 3svw 6svw;
+  margin: 0svw 5svw 5svw 5svw;
+}
+
+footer .container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#social {
+  display: flex;
+  flex-direction: column;
+}
+
+#social ul {
+  display: flex;
+  gap: 2svw;
+}
+
+#social > ul > li > a > img {
+  display: none;
+}
+
+#social > ul > li > a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-size: 1.5svw;
+}
+
+#social img {
+  width: 15svw;
+  margin-bottom: 1svw;
+}
+
+#social p {
+  color: var(--quaternary-color);
+}
+
+#links {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#links .info_title {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+#links > ul > li > a {
+  color: var(--quaternary-color);
+  font-size: 1.5svw;
+}
+
+@media (min-width: 1024px) {
+  header .menu_mobile {
+    display: none;
+  }
+
+  header nav {
+    width: 50%;
+  }
+  #nav_links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3svw 0svw 1svw 0svw;
+  }
+
+  #nav_links > li > a {
+    font-size: 1svw;
+    color: var(--tertiary-color);
+  }
+
+  #sign_up .button {
+    padding: 0.5svw 1svw;
+    font-size: 1svw;
+  }
+
+  header .logo {
+    width: 10svw;
+    margin: 3svw 3svw 1svw 0svw;
+  }
+
+  #social > ul > li > a > img {
+    width: 50%;
+    display: flex;
+  }
+
+  #social > ul > li > a > span {
+    display: none;
+  }
+
+  #contact > form > input::placeholder {
+    font-size: 1.5svw;
+  }
+}

@@ -92,6 +92,7 @@ header .logo {
 header .menu_mobile {
   width: 8svw;
   margin: 0svw 3svw 0svw 3svw;
+  cursor: pointer;
 }
 
 main {

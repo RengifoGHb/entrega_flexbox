@@ -53,8 +53,9 @@ a:focus {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: var(--background-color-body);
+  max-width: 2000px;
 }
 
 header {
@@ -298,7 +299,7 @@ footer .container {
 
 #social ul {
   display: flex;
-  gap: 2svw;
+  gap: 1svw;
 }
 
 #social > ul > li > a > img {
@@ -356,6 +357,13 @@ footer .container {
     color: var(--tertiary-color);
   }
 
+  #info_payday {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   #sign_up .button {
     padding: 0.5svw 1svw;
     font-size: 1svw;
@@ -367,7 +375,7 @@ footer .container {
   }
 
   #social > ul > li > a > img {
-    width: 50%;
+    width: 80%;
     display: flex;
   }
 
@@ -377,5 +385,14 @@ footer .container {
 
   #contact > form > input::placeholder {
     font-size: 1.5svw;
+  }
+
+  #links {
+    width: 60%;
+  }
+
+  #links > ul > li > a {
+    color: var(--quaternary-color);
+    font-size: 1svw;
   }
 }

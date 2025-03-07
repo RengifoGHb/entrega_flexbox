@@ -55,7 +55,6 @@ a:focus {
 body {
   margin: 0 auto;
   background-color: var(--background-color-body);
-  max-width: 2000px;
 }
 
 header {
